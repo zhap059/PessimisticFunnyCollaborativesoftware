@@ -16,7 +16,7 @@ for line in f:
   dRadius.append(float(line.split('\t')[2]))
   dVelocity.append(float(line.split('\t')[3]))
   mass.append(float(line.split('\t')[4]))
-  predictedVelocity.append((float(G)) * (float(line.split('\t')[4])) / (float(line.split('\t')[0]))**(1/2))
+  predictedVelocity.append(((float(G)) * (float(line.split('\t')[4])) / (float(line.split('\t')[0])))**(1/2))
 
 x=np.array(radius)
 y=np.array(velocity)
